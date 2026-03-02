@@ -1,0 +1,32 @@
+{
+    "name": "officeguy/laravel-sumit-gateway-filament",
+    "description": "Filament UI integration for OfficeGuy SUMIT Payment Gateway",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^5.0",
+        "bezhansalleh/filament-plugin-essentials": "^1.1",
+        "officeguy/laravel-sumit-gateway": "^2.6",
+        "laravel/framework": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OfficeGuy\\LaravelSumitGateway\\Filament\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OfficeGuy\\LaravelSumitGateway\\Filament\\SumitGatewayFilamentServiceProvider",
+                "OfficeGuy\\LaravelSumitGateway\\Filament\\Client\\ClientPanelProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
