@@ -9,7 +9,7 @@ use OfficeGuy\LaravelSumitGateway\Filament\Client\Widgets\ClientStatsOverview;
 
 class ClientDashboard extends BaseDashboard
 {
-    protected static ?string $navigationIcon = 'heroicon-o-home';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-home';
 
     protected static ?string $navigationLabel = 'Dashboard';
 
